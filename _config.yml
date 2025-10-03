@@ -25,7 +25,9 @@ navbar-links:
     - Karla: "karla"
     - Ronald: "ronald"
   Supervisory Board: "board"
-  Events: "events"
+  Events: 
+    - Upcomming: "events"
+    - Event Request: "EventRequest" 
   News: "news"
   Code of Conduct: "coc"
   About: "about"
