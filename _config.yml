@@ -27,7 +27,8 @@ navbar-links:
   Supervisory Board: "board"
   Events: 
     - Upcomming: "events"
-    - Event Request: "EventRequest" 
+    - Event Request: "EventRequest"
+    - TEST: "test"
   News: "news"
   Code of Conduct: "coc"
   About: "about"
