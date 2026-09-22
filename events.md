@@ -5,4 +5,4 @@ subtitle: Stichting Cloud Native Netherlands
 css: assets/css/image.css
 ---
 
-We are thrilled to announce that the Stichting Cloud Native Netherlands is one of the sponsors of two fantastic side events during KubeCon Amsterdam 2026! We look forward to an evening of karaoke and a friendly bowling competition. The Karaoke party is on Tuesday March 24, 9pm - 1am at Escape Club on Rembrandtplein. KuBBBeCon (Benelux Bowling Borrel) will take place on Wednesday, March the 25th at 18h00 in Knijn Bowling. See you there!!
+We're excited to support the third edition of Dutch Cloud Native Day in Utrecht on October 29-30 as a community sponsor. Day 1 features hands-on workshops, while Day 2 includes keynotes, technical deep dives, and real-world case studies. Stop by our community booth to say hello, exchange ideas, and meet fellow community members. Explore the agenda and register here: https://www.dutchcloudnativeday.nl/agenda
