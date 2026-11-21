@@ -1,0 +1,108 @@
+---
+layout: scnn
+title: Request an event
+nav: request
+description: Ask Stichting Cloud Native Netherlands to support your meetup, conference, workshop or hackathon.
+js: /assets/js/event-request.js
+---
+<section class="hero">
+  <div class="hero__inner">
+    <p class="eyebrow">For organizers</p>
+    <h1>Request an event</h1>
+    <p class="hero__lead">Organizing a meetup, conference, workshop or hackathon and looking for support from the foundation? Send us a short request. If your event fits, the board will get back to you with the detailed support request form.</p>
+  </div>
+</section>
+
+<section class="section section--tint">
+  <div class="section__inner section__inner--narrow">
+    <form id="event-request-form" class="form" novalidate>
+
+      <div class="form__group">
+        <h2>Your event</h2>
+        <div class="form__fields">
+          <div class="field field--wide">
+            <label for="er-name">Event name <span class="required">*</span></label>
+            <input type="text" id="er-name" data-label="Event name" required>
+          </div>
+          <div class="field">
+            <label for="er-type">Type of event <span class="required">*</span></label>
+            <select id="er-type" data-label="Type of event" required>
+              <option value="">Choose a type</option>
+              <option>Conference</option>
+              <option>Meetup</option>
+              <option>Workshop</option>
+              <option>Hackathon</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="er-dates">Proposed date(s) <span class="required">*</span></label>
+            <input type="text" id="er-dates" data-label="Proposed date(s)" placeholder="For example March 2027" required>
+          </div>
+          <div class="field">
+            <label for="er-city">City <span class="required">*</span></label>
+            <input type="text" id="er-city" data-label="City" required>
+          </div>
+          <div class="field">
+            <label for="er-attendees">Expected number of attendees</label>
+            <input type="number" min="1" id="er-attendees" data-label="Expected number of attendees">
+          </div>
+          <div class="field field--wide">
+            <label for="er-desc">What is the event about? <span class="required">*</span></label>
+            <textarea id="er-desc" rows="4" data-label="About the event" required></textarea>
+          </div>
+        </div>
+      </div>
+
+      <div class="form__group">
+        <h2>Support you are looking for</h2>
+        <p>Tick what applies. The details come later, in the detailed request.</p>
+        <div class="form__fields">
+          <fieldset class="fieldset">
+            <legend class="visually-hidden">Kind of support</legend>
+            <label class="check"><input type="checkbox" id="er-financial" data-label="Financial support"> Financial support</label>
+            <label class="check"><input type="checkbox" id="er-marketing" data-label="Marketing and promotion"> Marketing and promotion</label>
+            <label class="check"><input type="checkbox" id="er-logistics" data-label="Logistics (venue, catering, ticketing)"> Logistics (venue, catering, ticketing)</label>
+            <label class="check"><input type="checkbox" id="er-sponsorship" data-label="Help finding sponsors"> Help finding sponsors</label>
+          </fieldset>
+          <div class="field field--wide">
+            <label for="er-other">Anything else we should know?</label>
+            <textarea id="er-other" rows="3" data-label="Anything else"></textarea>
+          </div>
+        </div>
+      </div>
+
+      <div class="form__group">
+        <h2>Your contact details</h2>
+        <div class="form__fields">
+          <div class="field">
+            <label for="er-contact-name">Name <span class="required">*</span></label>
+            <input type="text" id="er-contact-name" data-label="Name" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="er-contact-email">Email <span class="required">*</span></label>
+            <input type="email" id="er-contact-email" data-label="Email" autocomplete="email" required>
+          </div>
+          <div class="field">
+            <label for="er-contact-phone">Phone</label>
+            <input type="tel" id="er-contact-phone" data-label="Phone" autocomplete="tel">
+          </div>
+          <div class="field">
+            <label for="er-contact-org">Organization or community</label>
+            <input type="text" id="er-contact-org" data-label="Organization or community" autocomplete="organization">
+          </div>
+        </div>
+      </div>
+
+      <p id="er-status" class="form__status" role="status" aria-live="polite"></p>
+
+      <div class="btn-row">
+        <button type="submit" class="btn btn--primary">Send request</button>
+        <button type="button" class="btn btn--outline" id="er-copy">Copy request text</button>
+      </div>
+
+      <p class="form__note"><strong>Send request</strong> opens your email app with a message to <a href="mailto:info@cloudnativenetherlands.nl">info@cloudnativenetherlands.nl</a> that contains your answers. Your request is submitted once you send that email. Does your email app not open? Use <strong>Copy request text</strong> and paste it into an email.</p>
+      <p class="form__note">Sending a request does not guarantee support. The board reviews every request against the foundation's mission, policy and capacity. All events supported by the foundation follow our <a href="{{ '/coc' | relative_url }}">Code of Conduct</a>.</p>
+    </form>
+  </div>
+</section>

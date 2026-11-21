@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="og:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}">
+  <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <meta property="og:image" content="{{ '/assets/img/scnn-logo.png' | absolute_url }}">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="{{ '/favicon.ico' | relative_url }}" sizes="any">
+  <link rel="icon" type="image/png" href="{{ '/assets/img/favicon-64.png' | relative_url }}">
+  <link rel="apple-touch-icon" href="{{ '/assets/img/apple-touch-icon.png' | relative_url }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&family=Inter:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="{{ '/assets/css/scnn.css' | relative_url }}">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="{{ '/' | relative_url }}">
+        <img src="{{ '/assets/img/favicon-64.png' | relative_url }}" alt="" width="52" height="52">
+        <span>Cloud Native Netherlands</span>
+      </a>
+      <button type="button" class="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="site-nav">
+        <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"></path></svg>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <a href="{{ '/' | relative_url }}"{% if page.nav == 'home' %} class="is-active" aria-current="page"{% endif %}>Home</a>
+        <a href="{{ '/events' | relative_url }}"{% if page.nav == 'events' %} class="is-active" aria-current="page"{% endif %}>Events</a>
+        <a href="{{ '/board' | relative_url }}"{% if page.nav == 'board' %} class="is-active" aria-current="page"{% endif %}>Board</a>
+        <a href="{{ '/coc' | relative_url }}"{% if page.nav == 'coc' %} class="is-active" aria-current="page"{% endif %}>Code of Conduct</a>
+        <a href="{{ '/about' | relative_url }}"{% if page.nav == 'about' %} class="is-active" aria-current="page"{% endif %}>About</a>
+        <a class="btn btn--primary btn--nav" href="{{ '/event-request' | relative_url }}">Request an event</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+{{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div class="site-footer__col site-footer__col--wide">
+        <div class="site-footer__name">Stichting Cloud Native Netherlands</div>
+        <p>Oosteinde 74<br>1474 ME Oosthuizen<br>KvK 95900780</p>
+      </div>
+      <div class="site-footer__col">
+        <div class="site-footer__label">Contact</div>
+        <a href="mailto:info@cloudnativenetherlands.nl">info@cloudnativenetherlands.nl</a>
+        <a href="https://www.linkedin.com/company/stichting-cloud-native-netherlands">LinkedIn</a>
+        <a href="https://github.com/cloudnativenetherlands">GitHub</a>
+      </div>
+      <div class="site-footer__col">
+        <div class="site-footer__label">Foundation</div>
+        <a href="{{ '/coc' | relative_url }}">Code of Conduct</a>
+        <a href="{{ '/about' | relative_url }}">Legal and bank details</a>
+        <a href="{{ '/event-request' | relative_url }}">Request an event</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="{{ '/assets/js/scnn.js' | relative_url }}"></script>
+  {% if page.js %}<script src="{{ page.js | relative_url }}"></script>{% endif %}
+</body>
+</html>

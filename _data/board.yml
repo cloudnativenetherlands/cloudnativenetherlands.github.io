@@ -1,0 +1,64 @@
+# Board members and Supervisory Board, shown on the home page, /board and the profile pages.
+#
+# Photo: add a line `github: <username>` to a person to show their GitHub profile
+# picture, which then follows whatever picture they set on GitHub. Without it
+# (or if GitHub cannot be reached) the file in `photo` is used.
+members:
+  - id: marcel
+    name: Marcel
+    role: Treasurer
+    photo: /assets/img/marcel.jpg
+    url: /marcel
+    summary: >-
+      Founder of the foundation and CNCF Ambassador since 2025. Marcel has been a
+      core organizer of the local community since 2022 and is involved in Kubernetes
+      Community Days, Dutch Cloud Native Day and the CNCF TAG for Environmental
+      Sustainability.
+  - id: karla
+    name: Karla
+    role: Vice President, Secretary and Marketing
+    photo: /assets/img/karla.jpg
+    url: /karla
+    summary: >-
+      Organizer of Kubernetes Community Days and Dutch Cloud Native Day, and Senior
+      Field Marketing Manager EMEA at Isovalent, now part of Cisco. Karla is
+      dedicated to promoting inclusivity and diversity within tech.
+  - id: ronald
+    name: Ronald
+    role: President
+    photo: /assets/img/ronald.jpg
+    url: /ronald
+    summary: >-
+      Co-founder of the foundation, CNCF Ambassador and co-host of De Nederlandse
+      Kubernetes Podcast. Ronald is passionate about making complex technologies
+      accessible and building inclusive, open communities.
+
+supervisory:
+  - name: HCS Company
+    logo: /assets/img/hcs-logo.png
+    person: Represented by K.P. Majoor
+    site: https://www.hcs-company.com
+    site_label: hcs-company.com
+    text: >-
+      An IT company with a mission: making innovations more human using enterprise
+      and open source technology. HCS Company helps clients get the most out of
+      their hybrid platforms, in the areas of containerization, automation,
+      observability and enablement.
+  - name: Fika.works
+    logo: /assets/img/fikaworks_logo.jpeg
+    person: Represented by Catalin Jora, cloud native consultant
+    site: https://fika.works
+    site_label: fika.works
+    text: >-
+      A community first, company second. Fika.works believes a cooperative structure
+      helps its members be the best version of themselves. It specializes in cloud
+      native consultancy, and all members have extensive experience in their fields.
+  - name: ACC ICT
+    logo: /assets/img/acc_ict_logo.jpeg
+    person: Represented by Paul Bijleveld, Managing Director
+    site: https://acc-ict.com
+    site_label: acc-ict.com
+    text: >-
+      A Kubernetes specialist with more than ten years of experience running
+      mission-critical platforms on Kubernetes, and a Kubernetes Certified Service
+      Provider (KCSP). ACC ICT has stood for IT continuity since 1977.

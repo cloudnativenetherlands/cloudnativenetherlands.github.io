@@ -1,0 +1,11 @@
+<div class="cards">
+  {% for m in site.data.board.members %}
+  <article class="card member">
+    <img class="avatar" src="{% if m.github %}https://github.com/{{ m.github }}.png?size=240{% else %}{{ m.photo | relative_url }}{% endif %}" data-fallback="{{ m.photo | relative_url }}" alt="Portrait of {{ m.name }}" width="112" height="112">
+    <h3>{{ m.name }}</h3>
+    <p class="member__role">{{ m.role }}</p>
+    <p>{{ m.summary }}</p>
+    <a class="more" href="{{ m.url | relative_url }}">Read full profile<span class="visually-hidden"> of {{ m.name }}</span></a>
+  </article>
+  {% endfor %}
+</div>

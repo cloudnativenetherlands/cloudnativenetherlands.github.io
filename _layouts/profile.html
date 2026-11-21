@@ -1,0 +1,21 @@
+---
+layout: scnn
+---
+{% for m in site.data.board.members %}{% if m.id == page.member %}
+<section class="hero">
+  <div class="hero__inner hero__inner--profile">
+    <img class="avatar avatar--large" src="{% if m.github %}https://github.com/{{ m.github }}.png?size=400{% else %}{{ m.photo | relative_url }}{% endif %}" data-fallback="{{ m.photo | relative_url }}" alt="Portrait of {{ m.name }}" width="200" height="200">
+    <div class="hero__text">
+      <p class="eyebrow">Board member</p>
+      <h1>{{ m.name }}</h1>
+      <p class="hero__role">{{ m.role }}</p>
+    </div>
+  </div>
+</section>
+{% endif %}{% endfor %}
+<section class="section">
+  <div class="section__inner section__inner--narrow prose">
+{{ content }}
+    <p><a class="more" href="{{ '/board' | relative_url }}">Back to all board members</a></p>
+  </div>
+</section>
