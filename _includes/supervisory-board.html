@@ -1,0 +1,12 @@
+<p class="lead lead--small">The Supervisory Board advises the foundation's board and provides independent oversight of its governance and finances, safeguarding the continuity of the foundation.</p>
+<div class="cards">
+  {% for s in site.data.board.supervisory %}
+  <article class="card supporter">
+    <div class="supporter__logo"><img src="{{ s.logo | relative_url }}" alt="{{ s.name }} logo"></div>
+    <h3>{{ s.name }}</h3>
+    <p class="supporter__person">{{ s.person }}</p>
+    <p>{{ s.text }}</p>
+    <a class="more" href="{{ s.site }}">{{ s.site_label }}</a>
+  </article>
+  {% endfor %}
+</div>

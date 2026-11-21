@@ -1,17 +1,104 @@
 ---
-layout: page
-title: Foundation
-subtitle: Stichting Cloud Native Netherlands
+layout: scnn
+nav: home
+description: Stichting Cloud Native Netherlands promotes open source software in the Netherlands by organizing events and activities for the Dutch cloud native community.
 ---
+<section class="hero">
+  <div class="hero__inner hero__inner--split">
+    <div class="hero__text">
+      <p class="eyebrow">Stichting Cloud Native Netherlands</p>
+      <h1>The Dutch cloud native community</h1>
+      <p class="hero__lead">Our mission is promoting open source software in the Netherlands by organizing events and activities around these technologies.</p>
+      <div class="btn-row">
+        <a class="btn btn--primary" href="{{ '/events' | relative_url }}">See our events</a>
+        <a class="btn btn--outline" href="{{ '/event-request' | relative_url }}">Request an event</a>
+      </div>
+    </div>
+    <div class="hero__logo">
+      <img src="{{ '/assets/img/scnn-logo.png' | relative_url }}" alt="Stichting Cloud Native Netherlands logo" width="320" height="331">
+    </div>
+  </div>
+</section>
 
-<p><img src="assets/img/scnn-logo.png"  width="300" height="300" class="center" alt="sccn"></p>
+<section class="facts" aria-label="The community in numbers">
+  <div class="facts__inner">
+    <div class="fact"><div class="fact__number">2016</div><div class="fact__label">First Dutch cloud native meetup</div></div>
+    <div class="fact"><div class="fact__number">4,000+</div><div class="fact__label">Community members</div></div>
+    <div class="fact"><div class="fact__number">3</div><div class="fact__label">Kubernetes Community Days organized</div></div>
+    <div class="fact"><div class="fact__number">2024</div><div class="fact__label">Foundation founded on 24 December</div></div>
+  </div>
+</section>
 
-<h2 id="mission">Mission</h2>
-<p>Our mission is promoting Open Source software in the Netherlands by organizing events and activities around these technologies. </p>
-<h2 id="history">History</h2>
-<p>The Dutch Cloud Native community began taking shape with the first meetup in 2016 and has grown steadily over the years into a vibrant and inclusive ecosystem. Through the dedication of many volunteers, organizers, and supporters, the community has hosted numerous monthly meetups and organized three successful Kubernetes Community Day (KCD) events.
-In recognition of this momentum and to support sustainable, vendor-neutral growth, Stichting Cloud Native Netherlands was officially founded on 24 December 2024. The foundation provides structure and continuity to the community’s ongoing activities.
-Today, the community includes more than 4,000 members, and continues to grow thanks to the collaborative efforts of individuals and organizations who share a passion for open source, cloud-native technologies, and knowledge sharing.
-<h2 id="cncf-collab">CNCF collab</h2>
-<p>We collaborate closely with the Cloud Native Computing Foundation (CNCF), the global organization dedicated to bringing together the world’s top developers, end users, and vendors and run the largest open source developer conferences. </p>
-<p>Many of the foundation members are CNCF ambassadors or cover other roles in the Kubernetes and Cloud Native community ecosystem at large.</p>
+<section class="section">
+  <div class="section__inner">
+    <div class="section__head">
+      <p class="eyebrow">What we do</p>
+      <h2>A vendor-neutral foundation for community events</h2>
+    </div>
+    <div class="cards">
+      <article class="card">
+        <h3>Events and meetups</h3>
+        <p>Monthly meetups and Kubernetes Community Days, run by volunteers, organizers and supporters from the community.</p>
+        <a class="more" href="{{ '/events' | relative_url }}">See our events</a>
+      </article>
+      <article class="card">
+        <h3>Support for organizers</h3>
+        <p>Planning a meetup, conference, workshop or hackathon? Ask the foundation for financial, marketing, logistics or sponsorship support.</p>
+        <a class="more" href="{{ '/event-request' | relative_url }}">Request an event</a>
+      </article>
+      <article class="card">
+        <h3>CNCF collaboration</h3>
+        <p>We collaborate closely with the Cloud Native Computing Foundation. Many foundation members are CNCF ambassadors.</p>
+        <a class="more" href="https://www.cncf.io">More about the CNCF</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tint">
+  <div class="section__inner section__inner--split">
+    <div class="section__head">
+      <p class="eyebrow">Our story</p>
+      <h2>From one meetup to a foundation</h2>
+    </div>
+    <div class="section__body">
+      <p>The Dutch cloud native community began taking shape with the first meetup in 2016 and has grown steadily into a vibrant and inclusive ecosystem. Through the dedication of many volunteers, organizers and supporters, the community has hosted numerous monthly meetups and organized three successful Kubernetes Community Day (KCD) events.</p>
+      <p>To support sustainable, vendor-neutral growth, Stichting Cloud Native Netherlands was officially founded on 24 December 2024. The foundation provides structure and continuity to the community's ongoing activities.</p>
+      <p>Today the community includes more than 4,000 members and continues to grow thanks to individuals and organizations who share a passion for open source, cloud native technologies and knowledge sharing.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="board">
+  <div class="section__inner">
+    <div class="section__head">
+      <p class="eyebrow">The people</p>
+      <h2>Board members</h2>
+    </div>
+    {% include board-members.html %}
+    <hr class="divider">
+    <h3 id="supervisory-board">Supervisory Board</h3>
+    {% include supervisory-board.html %}
+  </div>
+</section>
+
+<section class="section section--tint">
+  <div class="section__inner section__inner--row">
+    <div class="section__head">
+      <p class="eyebrow">For companies</p>
+      <h2>Support the foundation</h2>
+      <p>Companies and organizations can help the community grow by sponsoring an event or by supporting the foundation directly. Get in touch to discuss the options.</p>
+    </div>
+    <a class="btn btn--outline" href="mailto:info@cloudnativenetherlands.nl">Contact the board</a>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="cta__inner">
+    <div class="cta__text">
+      <h2>Planning a cloud native event?</h2>
+      <p>Tell us about your event and the support you are looking for. The board reviews every request.</p>
+    </div>
+    <a class="btn btn--light" href="{{ '/event-request' | relative_url }}">Request an event</a>
+  </div>
+</section>

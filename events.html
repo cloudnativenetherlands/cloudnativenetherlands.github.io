@@ -1,0 +1,82 @@
+---
+layout: scnn
+title: Events
+nav: events
+description: Meetups, community days and conferences around open source and cloud native technology in the Netherlands.
+---
+<section class="hero">
+  <div class="hero__inner">
+    <p class="eyebrow">Events</p>
+    <h1>Meet the community</h1>
+    <p class="hero__lead">Meetups, community days and conferences around open source and cloud native technology in the Netherlands.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section__inner">
+    <h2>Upcoming events</h2>
+    <div class="event-list">
+      {% for e in site.data.events.upcoming %}
+      <article class="event">
+        <div class="event__date">{{ e.date }}</div>
+        <div class="event__body">
+          <h3 class="event__title">{{ e.title }}</h3>
+          <p>{{ e.text }}</p>
+          {% if e.link %}<a class="more" href="{{ e.link }}">{{ e.link_label }}</a>{% endif %}
+        </div>
+      </article>
+      {% else %}
+      <div class="empty">
+        <p class="empty__title">There are no upcoming events at the moment.</p>
+        <p>New events are announced here, in the <a href="https://ocgroups.dev/cncf/group/v62fy27">Cloud Native Amsterdam community group</a> and on <a href="https://www.linkedin.com/company/stichting-cloud-native-netherlands">LinkedIn</a>.</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--tint" id="request">
+  <div class="section__inner">
+    <div class="section__head">
+      <p class="eyebrow">For organizers</p>
+      <h2>Request support for your event</h2>
+      <p>The foundation supports community events with funding, marketing and promotion, logistics and sponsorship facilitation.</p>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step__number">1</div>
+        <div class="step__title">Send a short request</div>
+        <p>Tell us in a few lines what you are planning and what kind of support you are looking for.</p>
+      </div>
+      <div class="step">
+        <div class="step__number">2</div>
+        <div class="step__title">The board reviews</div>
+        <p>The board looks at whether your event fits the foundation's mission, policy and capacity.</p>
+      </div>
+      <div class="step">
+        <div class="step__number">3</div>
+        <div class="step__title">Detailed request</div>
+        <p>If it fits, you receive the detailed support request form to work out the plan together with the board.</p>
+      </div>
+    </div>
+    <div><a class="btn btn--primary" href="{{ '/event-request' | relative_url }}">Request an event</a></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section__inner">
+    <h2>Past events</h2>
+    <div class="event-list">
+      {% for e in site.data.events.past %}
+      <article class="event">
+        <div class="event__date">{{ e.date }}</div>
+        <div class="event__body">
+          <h3 class="event__title">{{ e.title }}</h3>
+          <p>{{ e.text }}</p>
+          {% if e.link %}<a class="more" href="{{ e.link }}">{{ e.link_label }}</a>{% endif %}
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>

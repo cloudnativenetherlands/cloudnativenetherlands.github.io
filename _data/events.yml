@@ -1,0 +1,39 @@
+# Events shown on /events.
+#
+# To announce an event, add it under `upcoming` (remove the [] first):
+#
+# upcoming:
+#   - date: 12 Mar 2027
+#     title: Cloud Native Meetup, Amsterdam
+#     text: One or two sentences about the event.
+#     link: https://example.org/tickets
+#     link_label: Tickets and agenda
+#
+# After the event, move the entry to the top of `past`.
+upcoming: []
+
+past:
+  - date: 29–30 Oct 2026
+    title: Dutch Cloud Native Day, Utrecht
+    text: >-
+      Third edition, with a day of hands-on workshops and a day of keynotes,
+      technical deep dives and case studies. Supported by the foundation as
+      community sponsor.
+    link: https://www.dutchcloudnativeday.nl
+    link_label: dutchcloudnativeday.nl
+  - date: 3 Jul 2025
+    title: Dutch Cloud Native Day, Utrecht
+    text: >-
+      A one-day community conference at Congreslocatie Supernova (Jaarbeurs),
+      bringing together the local and international cloud native community for
+      talks, workshops and networking.
+    link: https://www.dutchcloudnativeday.nl
+    link_label: dutchcloudnativeday.nl
+  - date: 10 Dec 2024
+    title: Dutch Cloud Native Day, Amsterdam
+    text: >-
+      The first edition: a free half-day event at Science Park in Amsterdam,
+      bringing the cloud native community together to showcase and discuss open
+      source solutions to engineering problems.
+    link: https://ocgroups.dev/cncf/group/v62fy27/event/57tqtwt
+    link_label: Event page

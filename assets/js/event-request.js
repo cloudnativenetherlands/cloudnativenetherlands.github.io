@@ -12,7 +12,7 @@
   }
 
   function valueOf(field) {
-    if (field.type === "checkbox") return field.checked ? "Confirmed" : "";
+    if (field.type === "checkbox") return field.checked ? "Yes" : "";
     return field.value.trim();
   }
 

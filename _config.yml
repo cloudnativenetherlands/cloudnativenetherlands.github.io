@@ -15,20 +15,16 @@ title: Stichting Cloud Native Netherlands
 # Your name to show in the footer
 author: Stichting Cloud Native Netherlands
 
+# Short description, used by search engines and when a page is shared
+description: Stichting Cloud Native Netherlands promotes open source software in the Netherlands by organizing events and activities for the Dutch cloud native community.
+
 ###############################################
 # --- List of links in the navigation bar --- #
 ###############################################
 
 navbar-links:
-  Board members:
-    - Marcel: "marcel"
-    - Karla: "karla"
-    - Ronald: "ronald"
-  Supervisory Board: "board"
-  Events: 
-    - Upcoming: "events"
-    - Request an event: "event-request"
-  News: "news"
+  Events: "events"
+  Board: "board"
   Code of Conduct: "coc"
   About: "about"
 
