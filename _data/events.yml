@@ -9,6 +9,12 @@
 #     link: https://example.org/tickets
 #     link_label: Tickets and agenda
 #
+# Photos are optional. Add them to an event like this (shape is wide or tall):
+#     photos:
+#       - src: /assets/img/photo.jpg
+#         alt: Short description of the photo
+#         shape: wide
+#
 # After the event, move the entry to the top of `past`.
 upcoming: []
 
@@ -21,6 +27,13 @@ past:
       community sponsor.
     link: https://www.dutchcloudnativeday.nl
     link_label: dutchcloudnativeday.nl
+    photos:
+      - src: /assets/img/dcnd-2026-team.jpg
+        alt: Three board members in foundation sweaters at the community booth at Dutch Cloud Native Day 2026
+        shape: wide
+      - src: /assets/img/dcnd-2026-booth.jpg
+        alt: The community booth and its counter with the Dutch Cloud Native Day logo
+        shape: tall
   - date: 3 Jul 2025
     title: Dutch Cloud Native Day, Utrecht
     text: >-

@@ -135,6 +135,15 @@ p { margin: 0; }
 .event__date { flex: 0 0 190px; font-family: var(--heading); font-size: 24px; font-weight: 700; color: var(--blue); }
 .event__body { flex: 999 1 360px; min-width: 0; display: flex; flex-direction: column; gap: 6px; font-size: 16px; }
 .section .event__title { font-family: var(--body); font-size: 18px; font-weight: 600; line-height: 1.4; color: var(--ink); }
+.event__photos { flex: 1 1 100%; display: flex; gap: 16px; margin-top: 8px; }
+.event__photo { display: block; min-width: 0; height: auto; border-radius: 8px; object-fit: cover; background: var(--tint); }
+/* Side by side at the same height: a 4:3 photo next to a 3:4 photo needs widths in ratio 16:9. */
+.event__photo--wide { flex: 16 1 0; aspect-ratio: 4 / 3; }
+.event__photo--tall { flex: 9 1 0; aspect-ratio: 3 / 4; }
+@media (max-width: 640px) {
+  .event__photos { flex-direction: column; }
+  .event__photo--wide, .event__photo--tall { flex: none; width: 100%; }
+}
 .steps { display: flex; flex-wrap: wrap; gap: 32px 40px; }
 .step { flex: 1 1 240px; display: flex; flex-direction: column; gap: 8px; font-size: 16px; }
 .step__number { font-family: var(--heading); font-size: 40px; font-weight: 700; line-height: 1; color: var(--red); }
