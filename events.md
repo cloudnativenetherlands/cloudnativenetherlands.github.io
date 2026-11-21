@@ -5,4 +5,8 @@ subtitle: Stichting Cloud Native Netherlands
 css: assets/css/image.css
 ---
 
-We're excited to support the third edition of Dutch Cloud Native Day in Utrecht on October 29-30 as a community sponsor. Day 1 features hands-on workshops, while Day 2 includes keynotes, technical deep dives, and real-world case studies. Stop by our community booth to say hello, exchange ideas, and meet fellow community members. Explore the agenda and register here: https://www.dutchcloudnativeday.nl/agenda
+There are no upcoming events at the moment. New events will be announced on this page.
+
+## Organizing an event?
+
+Stichting Cloud Native Netherlands supports community events around open source and cloud native technology. If you are planning a meetup, conference, workshop or hackathon and would like our support, [request an event]({{ '/event-request' | relative_url }}).
