@@ -24,6 +24,11 @@ description: Meetups, community days and conferences around open source and clou
           <p>{{ e.text }}</p>
           {% if e.link %}<a class="more" href="{{ e.link }}">{{ e.link_label }}</a>{% endif %}
         </div>
+        {% if e.photos %}
+        <div class="event__photos">
+          {% for photo in e.photos %}<img class="event__photo event__photo--{{ photo.shape }}" src="{{ photo.src | relative_url }}" alt="{{ photo.alt }}" loading="lazy">{% endfor %}
+        </div>
+        {% endif %}
       </article>
       {% else %}
       <div class="empty">
@@ -75,6 +80,11 @@ description: Meetups, community days and conferences around open source and clou
           <p>{{ e.text }}</p>
           {% if e.link %}<a class="more" href="{{ e.link }}">{{ e.link_label }}</a>{% endif %}
         </div>
+        {% if e.photos %}
+        <div class="event__photos">
+          {% for photo in e.photos %}<img class="event__photo event__photo--{{ photo.shape }}" src="{{ photo.src | relative_url }}" alt="{{ photo.alt }}" loading="lazy">{% endfor %}
+        </div>
+        {% endif %}
       </article>
       {% endfor %}
     </div>
